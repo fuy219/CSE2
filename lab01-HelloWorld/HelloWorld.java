@@ -1,0 +1,20 @@
+//Fung yeung
+//Lab01
+//Hello World Java
+//Compile HelloWorld.java
+//Run the Program java HelloWorld//
+//Define a class
+public class HelloWorld{
+
+    public static void main(String[]args) {
+        
+        System.out.println("########################");
+        System.out.println("########################");
+        System.out.println("#                      #");
+        System.out.println("#  Hello World 2015!!  #");
+        System.out.println("#                      #");
+        System.out.println("########################");
+        System.out.println("########################");
+        System.out.println("test");
+    }
+}
