@@ -21,13 +21,13 @@ public class timeSheets{
         int hours=0; //initialize hours variable
         //create nestled for loop for 5 days of week
         for(int daysWeek=5; daysWeek>0; daysWeek--){
-            System.out.print("Number of hours per day: ");
-            int hoursPerDay= myScanner.nextInt();
-            hours=hours+hoursPerDay;
+            System.out.print("Number of hours per day: ");//prompt user to imput hours per day
+            int hoursPerDay= myScanner.nextInt();//store user imput for hours per day
+            hours=hours+hoursPerDay;//calculate total hours for employee
         }
         int sep= (hours*payrate);//declare and calculate total pay of a single employee
-        totalPayRoll=totalPayRoll+sep;
+        totalPayRoll=totalPayRoll+sep;//calculate total pay roll
         }
-        System.out.println("Your total payroll is: " +totalPayRoll);
+        System.out.println("Your total payroll is: " +totalPayRoll);// print out results
     }
 }
