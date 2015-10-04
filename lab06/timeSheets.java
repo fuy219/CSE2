@@ -1,35 +1,33 @@
 //Fung Yeung
-//CSE 02
-//October 1, 2015
-//lab 06
-// create a program that will give total payroll of employee 
-//import scanner command 
+//CSE02
+//10/1/201
+//Lab06
+//Create a that will give total payroll of employees
+//import scanner
 import java.util.Scanner;
-//add class
+//add public class
 public class timeSheets{
     //add main method
-    public static void main(String[] args){
-        Scanner myScanner= new Scanner(System.in);// declare scanner instance
-        System.out.print("Enter number of employees: ");// prompt user for number of employees
-        int employees= myScanner.nextInt();//stores user input for number of employees
-            double pay=0.0;
-            int hours=0;
-        for(int numberEmployees=employees;numberEmployees>0; numberEmployees--){//start loop for salary
-            System.out.print("Enter pay for employee in cents per hour: ");
-            double employeePay= myScanner.nextDouble();
-            pay=pay+employeePay;
-            System.out.println(pay);
-            
-            for(int dayWeek=5;dayWeek>0;dayWeek--){
-                System.out.print("Number of hours per day: ");
-                int hourPerDay=myScanner.nextInt();
-                hours=hours+hourPerDay;
-                
-            }
-
+    public static void main(String[]args){
+        //initialize variables
+        int totalPayRoll=0;
+        Scanner myScanner= new Scanner(System.in);//declare scanner instance
+        System.out.print("Enter number of employees: ");// prompt user for employee number information
+        int employees= myScanner.nextInt();//store number of employees
+        //for loop using number of Employees
+        for(int numberEmployees= employees; numberEmployees>0; numberEmployees--){
+            System.out.print("Enter payrate of employee in cents ex $7.25=725: ");//prompt user to enter payrate in cents
+        int payrate= myScanner.nextInt();//stores user imput of payrate
+        int hours=0; //initialize hours variable
+        //create nestled for loop for 5 days of week
+        for(int daysWeek=5; daysWeek>0; daysWeek--){
+            System.out.print("Number of hours per day: ");
+            int hoursPerDay= myScanner.nextInt();
+            hours=hours+hoursPerDay;
+        }
+        int sep= (hours*payrate);//declare and calculate total pay of a single employee
+        totalPayRoll=totalPayRoll+sep;
+        }
+        System.out.println("Your total payroll is: " +totalPayRoll);
     }
-                double totalpay=0.0;
-        totalpay=totalpay+(hours*pay);
-    System.out.println("Your total payroll is: " +totalpay);
-}
 }
