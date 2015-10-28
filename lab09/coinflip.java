@@ -1,3 +1,7 @@
+//Fung Yeung
+//CSE02
+//Lab09
+//10/27/15
 import java.util.Scanner;// import scanner
 public class coinflip{// declare class
 	public static int flip(){//add flip method to flip coin
